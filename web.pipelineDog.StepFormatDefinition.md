@@ -13,7 +13,7 @@
   [2.7. The Comment Property](#2-7)  
 [3. Summary](#3)  
 
-This document specifies the format of a PipelineDog (Web) Step Definition file (to be used in the PipelineDog Web App at web.pipeline.dog). Multiple PipelineDog Step Definition files can then be used to created a PipelineDog Project Definition file (an example can be seen [here](https://github.com/yazhousun/PipelineDog/blob/master/pipelineDog.ProjectFormatDefinition.md)). The PipelineDog Project Definition file can be used to create a executable bash script to run the analysis pipeline on your local system. This PipelineDog Project Definition file is thus a record of your pipeline run containing all the details about the input files, output files, commands, and the order these commands were carried out, and it is much easier to read and maintain than the generated bash script. The individual steps of a pipeline, i.e., a PipelineDog Step Definition file, can then be re-used efficiently to create other pipelines.   
+This document specifies the format of a PipelineDog (Web) Step Definition file (to be used in the PipelineDog Web App at web.pipeline.dog). Multiple PipelineDog Step Definition files can then be used to created a PipelineDog Project Definition file (an example can be seen [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.ProjectFormatDefinition.md)). The PipelineDog Project Definition file can be used to create a executable bash script to run the analysis pipeline on your local system. This PipelineDog Project Definition file is thus a record of your pipeline run containing all the details about the input files, output files, commands, and the order these commands were carried out, and it is much easier to read and maintain than the generated bash script. The individual steps of a pipeline, i.e., a PipelineDog Step Definition file, can then be re-used efficiently to create other pipelines.   
 
 First, some basic definitions:  
 
@@ -40,7 +40,7 @@ out : $~B,
 }
 ```
 
-For quick tips on how to use YAML in general and in PipelineDog, please read [here](https://github.com/yazhousun/PipelineDog/blob/master/pipelineDog.YAMLtips.md).  
+For quick tips on how to use YAML in general and in PipelineDog, please read [here](https://github.com/ysunlab/PipelineDog/blob/master/pipelineDog.YAMLtips.md).  
 
 If the `1.txt` file (i.e., a List File) contains the follow lines (i.e., Line Entries):
 ```
@@ -143,7 +143,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
   
   __How to use__:  
   1. The key name of a *LEASH Expression* must be matching a LEASH Target specified in the *Run* value: `~A` and `~B` matches the two targets in `/usr/bin/gzip -c ~A > ~B`.  
-  2. The key value must be enclosed inside a pair of curly braces: `{}`. This is the body of a LEASH expression, and it instructs PipelineDog on how to replace the LEASH Targets with real paths. The details on how to construct LEASH Expression are provided [here](https://github.com/yazhousun/PipelineDog/blob/master/pipelineDog.LEASHexpression.md).  
+  2. The key value must be enclosed inside a pair of curly braces: `{}`. This is the body of a LEASH expression, and it instructs PipelineDog on how to replace the LEASH Targets with real paths. The details on how to construct LEASH Expression are provided [here](https://github.com/ysunlab/PipelineDog/blob/master/pipelineDog.LEASHexpression.md).  
   3. Here, `~A : {},` instructs PipelineDog to replace the `~A` element with the file paths stored in `1.txt` using default values (as nothing was provide between `{` and `}`), and the behavior is one Line Entry for each command constructed. Similarly, `~B : {mod : "S'.txt'"},` instructs PipelineDog to replace the `~B` element with the file paths stored in `1.txt`, one Line Entry for each command constructed, but this time each Line Entry has been appended with the suffix `.txt` (the `S` tag). After PipelineDog has parsed the code completely, inside the resulting Bash script ready to use, these are the actual commands that will be run:
 ```
 /usr/bin/gzip -c /a/ABC.gz > /a/ABC.gz.txt
@@ -181,7 +181,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
 
 <a name="3" />
 ##3. Summary
-There are in total 7 different kinds of key-value pairs in a Step Definition, and they are explained in details in 2.1 to 2.7. There are 6 keys to describing a step (2.2 to 2.7), and one to ID the entire step (2.1). With a step defined, you can then define a pipeline with several steps. You can find out how to define a pipeline in the PipelineDog Project Definition file  [here](https://github.com/yazhousun/PipelineDog/blob/master/pipelineDog.ProjectFormatDefinition.md).
+There are in total 7 different kinds of key-value pairs in a Step Definition, and they are explained in details in 2.1 to 2.7. There are 6 keys to describing a step (2.2 to 2.7), and one to ID the entire step (2.1). With a step defined, you can then define a pipeline with several steps. You can find out how to define a pipeline in the PipelineDog Project Definition file  [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.ProjectFormatDefinition.md).
 
 A quick reference, the simplest Pipeline step definition contains:
 ```
@@ -209,7 +209,7 @@ out : $~B,
 
 In total, there are only 3 required key-value pairs that cannot be missing inside a Step Definition, and they are: the *Step-ID* key (`1-1`), the *Name* key (`name`), and the *Run* key(`run`). A LEASH target (`~A`) and its corresponding LEASH expression are the key mechanisim that allows PipelineDog to automatcally format and insert input file paths and output file paths to the appropriate place in a command line argument list.
 
-To learn more details about the LEASH expression, read [here](https://github.com/yazhousun/PipelineDog/blob/master/pipelineDog.LEASHexpression.md).
+To learn more details about the LEASH expression, read [here](https://github.com/ysunlab/PipelineDog/blob/master/pipelineDog.LEASHexpression.md).
 
 ============================================================
 Anbo Zhou  
