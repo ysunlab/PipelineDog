@@ -1,3 +1,1 @@
-[startPage]: https://github.com/ysunlab/PipelineDog/tree/master/img.d/startPage.jpg "Start Page"
-Test:
-![startPage]
+Image: ![Start Page](img.d/startPage.jpg)
