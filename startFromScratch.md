@@ -38,6 +38,6 @@ The interface is divided into two large parts, a panel part on the left side, an
   /home/usr/b3.bam
   ```
   You should delete these lines, and replace them with real file paths on your local system that will be used as the pipeline input.  
-  There is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the parse button, i.e., the <kbd>&gt; &lt;</kbd> button, so that you force a save event.
+  There is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the parse button, i.e., the <kbd>&lt; &gt;</kbd> button, so that you force a save event.
   
-  3. Additionally, you can upload &#8613; and &#8615; to 
+  3. Additionally, you can upload <kbd>&#8613;</kbd> and <kbd>&#8615;</kbd> to 
