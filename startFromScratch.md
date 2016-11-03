@@ -29,6 +29,6 @@ After you have clicked the `START` button, you should land on the following page
 
 The interface is divided into two large parts, a panel part on the left side, and a larger editor part on the right.  
 
-On the left, from top to bottom, there is a `Global Variables` section (we will not use in this simple example), the `List Files` tab (a `Default List` file has already been created for you, and pre-selected by default, i.e., with a gray background), and the `Steps` tab (a `Default Step` has been created for you).  
+  1. On the left, from top to bottom, there is a <kbd>Global Variables</kbd> section (we will not use in this simple example), the `List Files` tab (a `Default List` file has already been created for you, and pre-selected by default, i.e., with a gray background), and the `Steps` tab (a `Default Step` has been created for you).  
 
-On the right, the `EDITOR` window now display the content of the pre-selected `Default List`. 
+  2. On the right, the `EDITOR` window now display the content of the pre-selected `Default List`. 
