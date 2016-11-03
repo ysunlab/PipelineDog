@@ -20,7 +20,7 @@ Because we are starting from scratch, you don't need to select or upload any pro
 ##4. Know a little bit about the PipelineDog Web App interface  
 After you have clicked the `START` button, you should land on the following page:  
 <p align="center">
-  <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/justStarted.jpg?raw=true" alt="Just Started Page" />
+  <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/JustStarted.jpg?raw=true" alt="Just Started Page" />
 </p>
 
 The interface is divided into two large parts, a panel part on the left side, and a larger editor part on the right.  
