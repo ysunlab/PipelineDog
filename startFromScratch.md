@@ -16,7 +16,7 @@ And this is the starting page for the PipelineDog Web App.
 ##2. Optional (but recommended): read the PipelineDog documentations
 The documentations specifically for PipelineDog are here: https://github.com/ysunlab/PipelineDog  
 
-##3. Start a new project by clicking the `START` button  
+##3. Start a new project by clicking the <kbd>START</kbd> button  
 Because we are starting from scratch, you don't need to select or upload any project files (as suggested in the box with dotted line).  
 
 ##4. Know a little bit about the PipelineDog Web App interface  
