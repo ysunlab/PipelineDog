@@ -12,4 +12,19 @@ You should arrive a web page similar to this one:
 And this is the starting page for the PipelineDog Web App.  
 
 ##2. Optional (but recommended): read the PipelineDog documentations
-The documentations specifically for 
+The documentations specifically for PipelineDog are here: https://github.com/ysunlab/PipelineDog  
+
+##3. Start a new project by clicking the `START` button  
+Because we are starting from scratch, you don't need to select or upload any project files (as suggested in the box with dotted line).  
+
+##4. Know a little bit about the PipelineDog Web App interface  
+After you have clicked the `START` button, you should land on the following page:  
+<p align="center">
+  <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/justStarted.jpg?raw=true" alt="Just Started Page" />
+</p>
+
+The interface is divided into two large parts, a panel part on the left side, and a larger editor part on the right.  
+
+On the left, from top to bottom, there is a `Global Variables` section (we will not use in this simple example), the `List Files` tab (a `Default List` file has already been created for you, and pre-selected by default, i.e., with a gray background), and the `Steps` tab (a `Default Step` has been created for you).  
+
+On the right, the `EDITOR` window now display the content of the pre-selected `Default List`. 
