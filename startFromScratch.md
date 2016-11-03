@@ -29,6 +29,15 @@ After you have clicked the <kbd>START</kbd> button, you should land on the follo
 
 The interface is divided into two large parts, a panel part on the left side, and a larger editor part on the right.  
 
-  1. On the left, from top to bottom, there is a <kbd>Global Variables</kbd> section (we will not use in this simple example), the <kbd>List Files</kbd> tab (a <kbd>Default List</kbd> file has already been created for you, and pre-selected by default, i.e., with a gray background), and the `Steps` tab (a `Default Step` has been created for you).  
+  1. On the left, from top to bottom, there is a <kbd>Global Variables</kbd> section (we will not use in this simple example), the <kbd>List Files</kbd> tab (a <kbd>Default List</kbd> file has already been created for you, and pre-selected by default, i.e., with a gray background), and the <kbd>Steps</kbd> tab (a <kbd>Default Step</kbd> has been created for you).  
 
-  2. On the right, the `EDITOR` window now display the content of the pre-selected `Default List`. 
+  2. On the right, the <kbd>EDITOR</kbd> window now display the content of the pre-selected <kbd>Default List</kbd>. Initially, it contains the following content:
+  ```
+  /home/usr/b1.bam
+  /home/usr/b2.bam
+  /home/usr/b3.bam
+  ```
+  You should delete these lines, and replace them with real file paths on your local system that will be used as the pipeline input.  
+  There is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the parse button, i.e., the <kbd>&gt; &lt;</kbd> button, so that you force a save event.
+  
+  3. Additionally, you can upload &#8613; and &#8615; to 
