@@ -20,7 +20,7 @@ The documentations specifically for PipelineDog are here: https://github.com/ysu
 Because we are starting from scratch, you don't need to select or upload any project files (as suggested in the box with dotted line).  
 
 ##4. Know a little bit about the PipelineDog Web App interface  
-After you have clicked the `START` button, you should land on the following page:  
+After you have clicked the <kbd>START</kbd> button, you should land on the following page:  
 <p align="center">
   <kbd>
     <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/JustStarted.jpg?raw=true" alt="Just Started Page" />
@@ -29,6 +29,6 @@ After you have clicked the `START` button, you should land on the following page
 
 The interface is divided into two large parts, a panel part on the left side, and a larger editor part on the right.  
 
-  1. On the left, from top to bottom, there is a <kbd>Global Variables</kbd> section (we will not use in this simple example), the `List Files` tab (a `Default List` file has already been created for you, and pre-selected by default, i.e., with a gray background), and the `Steps` tab (a `Default Step` has been created for you).  
+  1. On the left, from top to bottom, there is a <kbd>Global Variables</kbd> section (we will not use in this simple example), the <kbd>List Files</kbd> tab (a <kbd>Default List</kbd> file has already been created for you, and pre-selected by default, i.e., with a gray background), and the `Steps` tab (a `Default Step` has been created for you).  
 
   2. On the right, the `EDITOR` window now display the content of the pre-selected `Default List`. 
