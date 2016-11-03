@@ -2,6 +2,8 @@
 
 ======
 
+This tutorial introduces a simple example to use PipelineDog Web App. You should have some knowledge of the Unix/Linux command-line operations, and have access to a machine with bash (a Unix shell).  
+
 ##1. With a compatible web browser, go to www.pipeline.dog
 Visit this web address (www.pipeline.dog) with a compatible web browser, and you have reached the PipelineDog Web App. The current list of tested compatible web browers are: Safari (v 10.0.1 or above), Opera (v 40.0 or above), and Chrome (v 54.0 or above).  
 
@@ -38,6 +40,19 @@ The interface is divided into two large parts, a panel part on the left side, an
   /home/usr/b3.bam
   ```
   You should delete these lines, and replace them with real file paths on your local system that will be used as the pipeline input.  
-  There is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the parse button, i.e., the <kbd>&lt; &gt;</kbd> button, so that you force a save event.  
+  There is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the PARSE button, i.e., the <kbd>&lt; &gt;</kbd> button, so that you force a save event.  
   
-  3. Additionally, you can upload a List File by clicking the <kbd>&#8613;</kbd> button, and you can also download the current List File that you have selected (i.e., with a gray background) by clicking the <kbd>&#8615;</kbd> button.   
+  3. Additionally, you can upload a List File by clicking the <kbd>&#8613;</kbd> button, and you can also download the current List File that you have selected (i.e., with a gray background) by clicking the <kbd>&#8615;</kbd> button.  
+  
+##4. Modify your List File  
+You should modify the content as well as the file name of the List File(s) to suit your needs, and in this example, we will do both.  
+
+  1. You can change the Default List's (or any List File's) name by first hovering over the Default List's tab on the left, and when the Edit icon (a pencil) appears, click on it, and this window pops up, allowing you to modify the List File's name.
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/changeListFileName.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  Let's change the Default List's name into `1.txt`.  
+  When done, don't forget to clikc the <kbd>OK</kbd> button.  
+  2. 
