@@ -31,13 +31,13 @@ The interface is divided into two large parts, a panel part on the left side, an
 
   1. On the left, from top to bottom, there is a <kbd>Global Variables</kbd> section (we will not use in this simple example), the <kbd>List Files</kbd> tab (a <kbd>Default List</kbd> file has already been created for you, and pre-selected by default, i.e., with a gray background), and the <kbd>Steps</kbd> tab (a <kbd>Default Step</kbd> has been created for you).  
 
-  2. On the right, the <kbd>EDITOR</kbd> window now display the content of the pre-selected <kbd>Default List</kbd>. Initially, it contains the following content:
+  2. On the right, the <kbd>EDITOR</kbd> window now display the content of the pre-selected <kbd>Default List</kbd>. Initially, it contains the following content:  
   ```
   /home/usr/b1.bam
   /home/usr/b2.bam
   /home/usr/b3.bam
   ```
   You should delete these lines, and replace them with real file paths on your local system that will be used as the pipeline input.  
-  There is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the parse button, i.e., the <kbd>&lt; &gt;</kbd> button, so that you force a save event.
+  There is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the parse button, i.e., the <kbd>&lt; &gt;</kbd> button, so that you force a save event.  
   
-  3. Additionally, you can upload <kbd>&#8613;</kbd> and <kbd>&#8615;</kbd> to 
+  3. Additionally, you can upload a List File by clicking the <kbd>&#8613;</kbd> button, and you can also download the current List File that you have selected (i.e., with a gray background) by clicking the <kbd>&#8615;</kbd> button.   
