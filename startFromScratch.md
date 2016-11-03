@@ -7,7 +7,9 @@ Visit this web address (www.pipeline.dog) with a compatible web browser, and you
 
 You should arrive a web page similar to this one:  
 <p align="center">
-  <img style="border: #00008B 4px solid;" src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/startPage.jpg?raw=true" alt="Start Page" />
+  <kbd>
+    <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/startPage.jpg?raw=true" alt="Start Page" />
+  </kbd>
 </p>
 And this is the starting page for the PipelineDog Web App.  
 
