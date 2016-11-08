@@ -10,7 +10,7 @@ Visit this web address (www.pipeline.dog) with a compatible web browser, and you
 You should arrive a web page similar to this one:  
 <p align="center">
   <kbd>
-    <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/startPage.jpg?raw=true" alt="Start Page" />
+    <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/00startPage.jpg?raw=true" alt="Start Page" />
   </kbd>
 </p>
 And this is the starting page for the PipelineDog Web App.  
@@ -25,7 +25,7 @@ Because we are starting from scratch, you don't need to select or upload any pro
 After you have clicked the <kbd>START</kbd> button, you should land on the following page:  
 <p align="center">
   <kbd>
-    <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/JustStarted.jpg?raw=true" alt="Just Started Page" />
+    <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/01justStarted.jpg?raw=true" alt="Just Started Page" />
   </kbd>
 </p>
 
@@ -50,7 +50,7 @@ You should modify the content as well as the file name of the List File(s) to su
   1. You can change the Default List's (or any List File's) name by first hovering over the Default List's tab on the left, and when the Edit icon (a pencil) appears, click on it, and this window pops up, allowing you to modify the List File's name.
   <p align="center">
     <kbd>
-      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/changeListFileName.jpg?raw=true" alt="Just Started Page" />
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/02changeListFileName.jpg?raw=true" alt="Just Started Page" />
     </kbd>
   </p>
   Let's change the Default List's name into `1.txt`.  
