@@ -44,7 +44,7 @@ The interface is divided into two large parts, a panel part on the left side, an
   
   3. Additionally, you can upload a List File by clicking the <kbd>&#8613;</kbd> button, and you can also download the current List File that you have selected (i.e., with a gray background) by clicking the <kbd>&#8615;</kbd> button.  
   
-##4. Modify your List File  
+##5. Modify your List File  
 You should modify the content as well as the file name of the List File(s) to suit your needs, and in this example, we will do both.  
 
   1. You can change the <kbd>Default List</kbd>'s (or any List File's) name by first hovering over the <kbd>Default List</kbd>'s tab on the left, and when the Edit icon (a pencil) appears, click on it, and this window pops up, allowing you to modify the List File's name.
@@ -69,3 +69,6 @@ You should modify the content as well as the file name of the List File(s) to su
       <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/03modifiedListFile.jpg?raw=true" alt="Just Started Page" />
     </kbd>
   </p>
+
+##6. Add a PipelineDog step  
+Now you can add an analysis step ()
