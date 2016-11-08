@@ -61,6 +61,7 @@ You should modify the content as well as the file name of the List File(s) to su
   /home/jsmith/Desktop/t2.gzip
   /home/jsmith/Desktop/t3.gzip
   ```
+  
   Again, there is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the PARSE button, i.e., the <kbd>&lt; &gt;</kbd> button, so that you force a save event.  
   Now, your PipelineDog Web App window looks like this:  
   <p align="center">
