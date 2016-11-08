@@ -47,12 +47,24 @@ The interface is divided into two large parts, a panel part on the left side, an
 ##4. Modify your List File  
 You should modify the content as well as the file name of the List File(s) to suit your needs, and in this example, we will do both.  
 
-  1. You can change the Default List's (or any List File's) name by first hovering over the Default List's tab on the left, and when the Edit icon (a pencil) appears, click on it, and this window pops up, allowing you to modify the List File's name.
+  1. You can change the <kbd>Default List</kbd>'s (or any List File's) name by first hovering over the <kbd>Default List</kbd>'s tab on the left, and when the Edit icon (a pencil) appears, click on it, and this window pops up, allowing you to modify the List File's name.
   <p align="center">
     <kbd>
       <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/02changeListFileName.jpg?raw=true" alt="Just Started Page" />
     </kbd>
   </p>
-  Let's change the Default List's name into `1.txt`.  
+  Let's change the <kbd>Default List</kbd>'s name into `1.txt`.  
   When done, don't forget to clikc the <kbd>OK</kbd> button.  
-  2. 
+  2. You can change the content of the <kbd>1.txt</kbd> List File by using the <kbd>EDITOR</kbd> window on the right. For example, assume that you have the following gzipped files with the following path:  
+  ```
+  /home/jsmith/Desktop/t1.gzip
+  /home/jsmith/Desktop/t2.gzip
+  /home/jsmith/Desktop/t3.gzip
+  ```
+  Again, there is no <kbd>SAVE</kbd> button, as this Web App automatically saves all your changes. If you just want to make sure, click on the PARSE button, i.e., the <kbd>&lt; &gt;</kbd> button, so that you force a save event.  
+  Now, your PipelineDog Web App window looks like this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/03modifiedListFile.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
