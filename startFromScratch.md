@@ -19,7 +19,7 @@ And this is the starting page for the PipelineDog Web App.
 The documentations specifically for PipelineDog are here: https://github.com/ysunlab/PipelineDog  
 
 ##3. Start a new project by clicking the <kbd>START</kbd> button  
-Because we are starting from scratch, you don't need to select or upload any project files (as suggested in the box with dotted line).  
+Because we are starting from scratch, you don't need to select or upload any project files (as suggested in the box with dotted line). In this project, we will use the example that we have also used in our PipelineDog definition documentations (e.g., [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.StepFormatDefinition.md) and [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.ProjectFormatDefinition.md)). In this example, we want to compare the file sizes of gzipped version, bzip2 compressed version, and the uncompressed original version (so that, for example, one would then know the compression ratio, and then decide which compressor to use for data backup/transmission). We start with some gzipped files (e.g., downloaded from a server), we decompress these gzipped files to recover the original files (while keeping the original gzipped versions), compress the uncompressed ones again but with bzip2 (again, keep the original uncompressed versions intact), and finally get the file sizes for all three versions of the file (or files, if you start with multiple gzipped files as in our example), and write the size information to separate files.  
 
 ##4. Know a little bit about the PipelineDog Web App interface  
 After you have clicked the <kbd>START</kbd> button, you should land on the following page:  
@@ -71,4 +71,20 @@ You should modify the content as well as the file name of the List File(s) to su
   </p>
 
 ##6. Add a PipelineDog step  
-Now you can add an analysis step ()
+Now you can add an analysis step (read more about PipelineDog step definition [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.StepFormatDefinition.md)) by clicking on the <kbd>Default Step</kbd> in the <kbd>Steps</kbd> tab on the left.  
+  
+  1. Initially the <kbd>Default Step</kbd> has no content, so it looks like this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/04stepEditorDefault.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  2. Let's enter a step definition into the <kbd>EDITOR</kbd> window on the right. Let's use the example also shown in our PipelineDog step definition documentation, i.e., unzip gzipped files while keeping the original gzipped ones. After some typing, your window should look like this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/05justEnteredStep1Def.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  3. 
