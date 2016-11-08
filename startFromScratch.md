@@ -80,11 +80,44 @@ Now you can add an analysis step (read more about PipelineDog step definition [h
     </kbd>
   </p>
   
-  2. Let's enter a step definition into the <kbd>EDITOR</kbd> window on the right. Let's use the example also shown in our PipelineDog step definition documentation, i.e., unzip gzipped files while keeping the original gzipped ones. After some typing, your window should look like this:  
+  2. Let's enter a step definition into the <kbd>EDITOR</kbd> window on the right. Let's use the example also shown in our PipelineDog step definition documentation, i.e., unzip gzipped files while keeping the original gzipped ones. The code that we will be using is the following:  
+  ```
+  1-1 : {
+      name : Gunzip while keep original,
+      in : $1.txt,
+      run : gunzip -c ~A > ~B,
+      ~A : {},
+      ~B : {mod : "S'.txt'"},
+      out : $~B
+  }
+  ```
+  
+  After some typing, your window should look like this:  
   <p align="center">
     <kbd>
       <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/05justEnteredStep1Def.jpg?raw=true" alt="Just Started Page" />
     </kbd>
   </p>
   
-  3. 
+  3. You will notice that although we have specified the step name by using `name : Gunzip while keep original`, at this moment in the  <kbd>Steps</kbd> tab on the left this step is still named `Default Step`. This is because although the saving of your code is automatic, you need to parse the code by clicking the PARSE button, i.e., the <kbd>&lt; &gt;</kbd> button. After you have clicked the <kbd>&lt; &gt;</kbd> button, your window now looks like this (i.e., with the correct step name displayed on the left):  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/06step1Parsed.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  4. After your step definition code has been parsed, you can now view the commands that will be generated according to your step definition code. To view the commands, click on the <kbd>COMMAND</kbd> button on the very top your right-side panel. And after clicking it, you should see this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/07step1Command.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  5. Also, you can view the output of this step (as defined by the `out` tag in your code). TO view the output, click on the <kbd>OUTPUT</kbd> button on the very top your right-side panel. And after clicking it, you should see this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/08step1Output.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  
