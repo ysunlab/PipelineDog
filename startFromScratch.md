@@ -170,4 +170,22 @@ At the moment, you have entered all the code for this pipeline, and specified th
     </kbd>
   </p>
   
-  2. To save a project
+  2. To save a project, click the <kbd>Save Project</kbd> button, and you will get this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/13saveProject.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  With the above window shown, you can either download the entire PipelineDog script by clicking the <kbd>DOWNLOAD</kbd> button in this poped-up window, or copy-paste the content inside this window directly.  
+  
+  3. To export the bash script (so you can run this script locally to actually run this pipeline and get the results), click the the <kbd>Export Pipeline</kbd> button, and you will get this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/12exportPipeline.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  Again, with the above window shown, you can either download the entire PipelineDog script by clicking the <kbd>DOWNLOAD</kbd> button in this poped-up window, or copy-paste the content inside this window directly.  
+
+##9. Restart for another pipeline
