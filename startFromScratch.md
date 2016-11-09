@@ -202,6 +202,19 @@ At the moment, you have entered all the code for this pipeline, and specified th
   ```
   cat ./*.ds
   ```
+  
+  For example, with the test files that we have used, we got this result:
+  ```
+  8	/Users/abc/Desktop/t1.gz
+  8	/Users/abc/Desktop/t1.gz.txt.bz2
+  32	/Users/abc/Desktop/t1.gz.txt
+  16	/Users/abc/Desktop/t2.gz
+  16	/Users/abc/Desktop/t2.gz.txt.bz2
+  32	/Users/abc/Desktop/t2.gz.txt
+  16	/Users/abc/Desktop/t3.gz
+  16	/Users/abc/Desktop/t3.gz.txt.bz2
+  40	/Users/abc/Desktop/t3.gz.txt
+  ```
 
 ##9. Restart for another pipeline  
 If you have done editing, saving, and exporting this pipeline, and you want to start over with another pipeline, then you can click on <kbd> &#9776; </kbd> button on the very top-left corner of the PipelineDog interface, and you will get this:  
