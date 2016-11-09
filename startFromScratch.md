@@ -188,4 +188,21 @@ At the moment, you have entered all the code for this pipeline, and specified th
   
   Again, with the above window shown, you can either download the entire PipelineDog script by clicking the <kbd>DOWNLOAD</kbd> button in this poped-up window, or copy-paste the content inside this window directly.  
 
-##9. Restart for another pipeline
+##9. Restart for another pipeline  
+If you have done editing, saving, and exporting this pipeline, and you want to start over with another pipeline, then you can click on <kbd> &#9776; </kbd> button on the very top-left corner of the PipelineDog interface, and you will get this:  
+<p align="center">
+  <kbd>
+    <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/14mainMenu.jpg?raw=true" alt="Just Started Page" />
+  </kbd>
+</p>
+
+Among the several options listed on the poped-up menu, there is the <kbd>New Project</kbd> button. Once clicked, you will be able to start from scratch again.
+
+======
+
+Yazhou Sun  
+Anbo Zhou  
+Yeting Zhang  
+Jinchuan Xing  
+
+Nov 2016  
