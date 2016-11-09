@@ -187,6 +187,21 @@ At the moment, you have entered all the code for this pipeline, and specified th
   </p>
   
   Again, with the above window shown, you can either download the entire PipelineDog script by clicking the <kbd>DOWNLOAD</kbd> button in this poped-up window, or copy-paste the content inside this window directly.  
+  
+  4. After you have obtained the generated bash script on your local system (and let's assume this script is named `p1.bash`), you can simple run this script by the following command:  
+  ```
+  ./p1.bash
+  ```
+  
+  Usually, you need to change the just created script from a text file to a runnable script, and you should use the following command:  
+  ```
+  chmod +x p1.bash
+  ```
+  
+  And if you have been following our example, you can check all the file sizes by issuing this command:  
+  ```
+  cat ./*.ds
+  ```
 
 ##9. Restart for another pipeline  
 If you have done editing, saving, and exporting this pipeline, and you want to start over with another pipeline, then you can click on <kbd> &#9776; </kbd> button on the very top-left corner of the PipelineDog interface, and you will get this:  
