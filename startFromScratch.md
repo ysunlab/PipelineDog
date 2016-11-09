@@ -122,4 +122,5 @@ Now you can add an analysis step (read more about PipelineDog step definition [h
     </kbd>
   </p>
   
-  
+##7. Add more steps
+Typically an analysis pipeline has more than one step, and you can add additional steps by clicking the ADD button, i.e., the <kbd>+</kbd> button, next to the <kbd>Steps</kbd> tab on the left. After clicking the <kbd>+</kbd> button, 
