@@ -161,4 +161,13 @@ Typically an analysis pipeline has more than one step, and you can add additiona
   </p>
   
 ##8. Save project & output bash script  
-At the moment, you have entered all the code for this pipeline, and specified the input data files' file paths. Now 
+At the moment, you have entered all the code for this pipeline, and specified the input data files' file paths. Now we can get the bash code that will run this pipeline on your local system. Just in case, let's first save the project.  
+  
+  1. To either save a project or export the generated bash script, you should click on the <kbd> &#8942; </kbd> button on the very top-right corner of the PipelineDog interface, and you will get this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/11saveProjOrExportPipeline.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  2. To save a project
