@@ -4,8 +4,10 @@
 
 This tutorial introduces a simple example to use PipelineDog Web App. You should have some knowledge of the Unix/Linux command-line operations, and have access to a machine with bash (a Unix shell).  
 
-##1. With a compatible web browser, go to www.pipeline.dog
-Visit this web address (www.pipeline.dog) with a compatible web browser, and you have reached the PipelineDog Web App. The current list of tested compatible web browers are: Safari (v 10.0.1 or above), Opera (v 40.0 or above), and Chrome (v 54.0 or above).  
+A video tutorial similar to, but containing less information than, this guide can be accessed [here](https://youtu.be/9NZ_g77evpA).  
+
+##1. With a compatible web browser, go to web.pipeline.dog
+Visit this web address (web.pipeline.dog) with a compatible web browser, and you have reached the PipelineDog Web App. The current list of tested compatible web browers are: Safari (v 10.0.1 or above), Opera (v 40.0 or above), and Chrome (v 54.0 or above).  
 
 You should arrive a web page similar to this one:  
 <p align="center">
