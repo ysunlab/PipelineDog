@@ -123,4 +123,42 @@ Now you can add an analysis step (read more about PipelineDog step definition [h
   </p>
   
 ##7. Add more steps
-Typically an analysis pipeline has more than one step, and you can add additional steps by clicking the ADD button, i.e., the <kbd>+</kbd> button, next to the <kbd>Steps</kbd> tab on the left. After clicking the <kbd>+</kbd> button, 
+Typically an analysis pipeline has more than one step, and you can add additional steps by clicking the ADD button, i.e., the <kbd>+</kbd> button, next to the <kbd>Steps</kbd> tab on the left. After clicking the <kbd>+</kbd> button, a new <kbd>Unamed Step</kbd> will appear on the left, and following the instructions in Step 6 above, you can modify the content, and then add other steps if necessary. What we will add in this example are the following:  
+
+  1. Add a step where we use `bzip2` to compress the output files from step `1-1`. The code to use is the following:  
+  ```
+  2-1 : {
+      name : Bzip2 while keep original,
+      in : $1-1.out,
+      run : bzip2 -k ~A,
+      ~A : {},
+      out : {mod : "S'.bz2'"}
+  }
+  ```
+  
+  And after you have entered the above code (step `2-1`), parsed the code, your window should look like this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/09addStep2.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+  2. Finally, we add a step to get all the file sizes (including the original gzipped ones, the decompressed ones, and the bzip2 compressed ones), and write the file size information to seperate text files retaining the original file name, but with a new suffix `.ds` (stands for data size). The code to use in the final step is the following:  
+  ```
+  3-1 : {
+      name : Check file size and save to file,
+      in : [$1.txt, $1-1.out, $2-1.out],
+      run : du ~A > ~B,
+      ~A : {},
+      ~B : {mod : "S'.ds'"}
+  }
+  ```
+  And after you have entered the above code (step `3-1`), parsed the code, your window should look like this:  
+  <p align="center">
+    <kbd>
+      <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/10addStep3.jpg?raw=true" alt="Just Started Page" />
+    </kbd>
+  </p>
+  
+##8. Save project & output bash script  
+At the moment, you have entered all the code for this pipeline, and specified the input data files' file paths. Now 
