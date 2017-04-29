@@ -1,6 +1,6 @@
 # PipelineDog (Web) Step Definition File Specification
 
-============================================================  
+======  
 ### Table of Content
 [1. A Quick Overview](#1)  
 [2. The Detailed Specification](#2)  
