@@ -1,12 +1,10 @@
 # PipelineDog Web App Guide: Start From Scratch
 
-======
-
 This tutorial introduces a simple example to use PipelineDog Web App. You should have some knowledge of the Unix/Linux command-line operations, and have access to a machine with bash (a Unix shell).  
 
 A video tutorial similar to, but containing less information than, this guide can be accessed [here](https://youtu.be/9NZ_g77evpA).  
 
-##1. With a compatible web browser, go to web.pipeline.dog
+## 1. With a compatible web browser, go to web.pipeline.dog
 Visit this web address (web.pipeline.dog) with a compatible web browser, and you have reached the PipelineDog Web App. The current list of tested compatible web browers are: Chrome (v 54.0 or above), Firefox (v 48.0 or above), Safari (v 10.0.1 or above), and Opera (v 40.0 or above).  
 
 You should arrive a web page similar to this one:  
@@ -17,15 +15,15 @@ You should arrive a web page similar to this one:
 </p>
 And this is the starting page for the PipelineDog Web App.  
 
-##2. Optional (but recommended): read the PipelineDog documentations
+## 2. Optional (but recommended): read the PipelineDog documentations
 The documentations specifically for PipelineDog are here: https://github.com/ysunlab/PipelineDog  
 
-##3. Start a new project by clicking the <kbd>START</kbd> button  
+## 3. Start a new project by clicking the <kbd>START</kbd> button  
 Because we are starting from scratch, you don't need to select or upload any project files (as suggested in the box with dotted line). In this project, we will use the example that we have also used in our PipelineDog definition documentations (e.g., [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.StepFormatDefinition.md) and [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.ProjectFormatDefinition.md)).  
 
 In this example, we want to compare the file sizes of gzipped version, bzip2 compressed version, and the uncompressed original version (so that, for example, one would then know the compression ratio, and then decide which compressor to use for data backup/transmission). We start with some gzipped files (e.g., downloaded from a server), we decompress these gzipped files to recover the original files (while keeping the original gzipped versions), compress the uncompressed ones again but with bzip2 (again, keep the original uncompressed versions intact), and finally get the file sizes for all three versions of the file (or files, if you start with multiple gzipped files as in our example), and write the size information to separate files.  
 
-##4. Know a little bit about the PipelineDog Web App interface  
+## 4. Know a little bit about the PipelineDog Web App interface  
 After you have clicked the <kbd>START</kbd> button, you should land on the following page:  
 <p align="center">
   <kbd>
@@ -48,7 +46,7 @@ The interface is divided into two large parts, a panel part on the left side, an
   
   3. Additionally, you can upload a List File by clicking the <kbd>&#8613;</kbd> button, and you can also download the current List File that you have selected (i.e., with a gray background) by clicking the <kbd>&#8615;</kbd> button.  
   
-##5. Modify your List File  
+## 5. Modify your List File  
 You should modify the content as well as the file name of the List File(s) to suit your needs, and in this example, we will do both.  
 
   1. You can change the <kbd>Default List</kbd>'s (or any List File's) name by first hovering over the <kbd>Default List</kbd>'s tab on the left, and when the Edit icon (a pencil) appears, click on it, and this window pops up, allowing you to modify the List File's name.
@@ -74,7 +72,7 @@ You should modify the content as well as the file name of the List File(s) to su
     </kbd>
   </p>
 
-##6. Add a PipelineDog step  
+## 6. Add a PipelineDog step  
 Now you can add an analysis step (read more about PipelineDog step definition [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.StepFormatDefinition.md)) by clicking on the <kbd>Default Step</kbd> in the <kbd>Steps</kbd> tab on the left.  
   
   1. Initially the <kbd>Default Step</kbd> has no content, so it looks like this:  
@@ -124,7 +122,7 @@ Now you can add an analysis step (read more about PipelineDog step definition [h
     </kbd>
   </p>
   
-##7. Add more steps
+## 7. Add more steps
 Typically an analysis pipeline has more than one step, and you can add additional steps by clicking the ADD button, i.e., the <kbd>+</kbd> button, next to the <kbd>Steps</kbd> tab on the left. After clicking the <kbd>+</kbd> button, a new <kbd>Unamed Step</kbd> will appear on the left, and following the instructions in Step 6 above, you can modify the content, and then add other steps if necessary. What we will add in this example are the following:  
 
   1. Add a step where we use `bzip2` to compress the output files from step `1-1`. The code to use is the following:  
@@ -162,7 +160,7 @@ Typically an analysis pipeline has more than one step, and you can add additiona
     </kbd>
   </p>
   
-##8. Save project & output bash script  
+## 8. Save project & output bash script  
 At the moment, you have entered all the code for this pipeline, and specified the input data files' file paths. Now we can get the bash code that will run this pipeline on your local system. Just in case, let's first save the project.  
   
   1. To either save a project or export the generated bash script, you should click on the <kbd> &#8942; </kbd> button on the very top-right corner of the PipelineDog interface, and you will get this:  
@@ -218,7 +216,7 @@ At the moment, you have entered all the code for this pipeline, and specified th
   40	/Users/abc/Desktop/t3.gz.txt
   ```
 
-##9. Restart for another pipeline  
+## 9. Restart for another pipeline  
 If you have done editing, saving, and exporting this pipeline, and you want to start over with another pipeline, then you can click on <kbd> &#9776; </kbd> button on the very top-left corner of the PipelineDog interface, and you will get this:  
 <p align="center">
   <kbd>
