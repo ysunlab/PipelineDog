@@ -1,4 +1,4 @@
-#PipelineDog (Web) Project Definition File Specification
+# PipelineDog (Web) Project Definition File Specification
 
 ============================================================
 
@@ -123,6 +123,7 @@ If you have any questions regarding how does each step is defined, please refer 
 
 
 ============================================================
+
 Anbo Zhou  
 Yeting Zhang  
 Yazhou Sun  
