@@ -1,8 +1,8 @@
 # LEASH Expression Specifications
-####The specifications for LEASH Expressions used in PipelineDog scripts
+#### The specifications for LEASH Expressions used in PipelineDog scripts
 
 ======
-###Table of Content
+### Table of Content
 [1. Basic Definitions](#1)  
 [2. LEASH Basics](#2)  
 [3. A Quick Example of LEASH](#3)  
@@ -17,7 +17,7 @@
 [6. Summary](#6)  
 
 <a name="1" />
-##1. Basic Definitions:
+## 1. Basic Definitions:
 First, some basic definitions:
 
 **List File**: a plain text file containing a list of file paths, with one path on each line.  
@@ -30,8 +30,8 @@ First, some basic definitions:
 **What is LEASH?**: LEASH stands for Line Entry Automated SHuffling, indicating that the Line Entries will be reformatted and rearranged automatically according to a set of LEASH Expressions.  
 
 <a name="2" />
-##2. LEASH Basics:
-###2.1. LEASH Keywords
+## 2. LEASH Basics:
+### 2.1. LEASH Keywords
 
 LEASH Expression operates with 3 keywords, and they are:
 
@@ -41,7 +41,7 @@ LEASH Expression operates with 3 keywords, and they are:
 
 Additionally, there is a 4th keyword `mods`, which must be used with LEASH Reserved Words ([here](#5)). This `mods` can replace most of the functionalities of `mod` (but not all), and make using LEASH a little easier than using the more powerful `mod` keyword.
 
-###2.2. The Basic Format of LEASH Expression
+### 2.2. The Basic Format of LEASH Expression
  
 1. The basic format of a LEASH Expression is `keyword : 'instructions'` or `keyword : "instructions"` (you must use either single quotes or double quotes to enclose your LEASH Expression instructions). Only when the an instruction contains single quotes (`''`), then you must enclose that instruction inside a pair of double quotes (`""`). *Tips*: double quotes always work.  
 
@@ -64,7 +64,7 @@ Additionally, there is a 4th keyword `mods`, which must be used with LEASH Reser
 5. A LEASH Expression must have a body (i.e., a pair of curly braces), even though there could be nothing in-between the pair of curly braces, e.g., `{}`.  
 
 <a name="3" />
-##3. A Quick Example of LEASH
+## 3. A Quick Example of LEASH
 
 First, a simple example with only 1 list file:
 
@@ -115,12 +115,12 @@ cat /a/t1.txt /a/t2.txt /temp/t3.txt > /temp/all.txt
 ```
 
 <a name="4" />
-##4. A Detailed Guide On How To Use LEASH
+## 4. A Detailed Guide On How To Use LEASH
 
 Here are the detailed explanation of each LEASH Expression keyword, and how to use them:
 
 <a name="4-1" />
-###1. The *file* keyword:
+### 4.1. The *file* keyword:
 The `file` is used to select the file(s) for a step.  
 
 This keyword is used in this format: `file : "1-3"`. The value of `file` is a range, e.g., `"1-3"` in this case, or sometime, simply `"-"`.  
@@ -137,7 +137,7 @@ input : [/b/t1.txt, /c/t2.txt, /c/t3.txt, /d/t4.txt]
 *The Default Value of `file`*: when omitted, `file` will take the value of "-", i.e., to select all files.
 
 <a name="4-2" />
-###2. The *line* keyword:
+### 4.2. The *line* keyword:
 
 The `line` is used to select the line(s) in a defined `file` keyword for a step.  
 
@@ -223,7 +223,7 @@ The `0` after `:` in this case instructs PipelineDog to place all selected Line 
 *The Default Value of `line`*: when omitted, "line" will take the value of "-", i.e., to select all Line Entries in the selected files, and to output one Line Entry per constructed command (i.e., with Grouping Tag of `1`, like this `"-:1"`).  
 
 <a name="4-3" />
-###3. The *mod* keyword:
+### 4.3. The *mod* keyword:
 
 `mod` stands for modification, and it allows the addition of a prefix (the `P` tag), a suffix (the `S` tag), and the selection of basic parts (the `L` or `F` tag) of the path. The format for specifying how to modify with a specific tag is a tag letter followed by a string enclosed in a pair of single quotes, for example: `P'-i '`. 
 
@@ -256,12 +256,12 @@ Again, PipelineDog will automatically add the last file separator (i.e., the for
 *The Default Value of `mod`*: when omitted, `mod` will take the value of `P''B'-'F'-'S''`, i.e., keep the original Line Entry intact when it is placed into the constructed command.
 
 <a name="4-4" />
-###4. The *mods* keyword:
+### 4.4. The *mods* keyword:
 
 `mods` (stands for mod-simplified) fulfills most of the functions of `mod` (but not all), but with a much easier-to-remember syntax. `mods` is used together with the LEASH Reserved Words, so the detailed usage of `mods` in the Section 5 [below](#5).
 
 <a name="5" />
-##5. LEASH Reserved Words For Better Usability:
+## 5. LEASH Reserved Words For Better Usability:
 
 First, let's assume again a List File (named `p1.txt`) containing these lines:
 ```
@@ -283,7 +283,7 @@ These Reserved Words, when used together with the keyword `mods`, can make progr
 5. `$FILENAME_WITHOUT_EXTENSION` : just the filename, excluding the last suffix (e.g., `t3`)  
 
 <a name="5-1" />
-###5.1. The `mods` keyword with Reserved Words  
+### 5.1. The `mods` keyword with Reserved Words  
 
 In a nutshell, `mods` is a simplified version of `mod`, and let's see an example first:  
 If we want to generate this output based on the List File `p1.txt` using LEASH:  
@@ -369,7 +369,7 @@ out : {mod : "S'.txt'"},
 Notice, all the tags with a leading `$` have been replaced by the actual values.
 
 <a name="6" />
-##6. Summary
+## 6. Summary
 
 The LEASH Expression provides an automated way to reformat and rearrange Line Entries, and it relies on only three keywords: `file`, `line`, and `mod` (or sometimes, `mods`). `file` provides the selection of List Files, or a Step Output object. `line` provides the selection of Line Entries, and it also provides options on how many to select for each constructed command, and how to arrangement them with separator characters. `mod` provides the ability to modify the Line Entries in a specific way, as described in the `mod` instruction. `mods` provides almost the same functionality of `mod`, but in a slightly easier-to-remember format.
 
