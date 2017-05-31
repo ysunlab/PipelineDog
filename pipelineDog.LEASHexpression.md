@@ -16,6 +16,7 @@
   [5.2. The `$` Reserved Word to Access Other Variables](#5-2)  
 [6. Summary](#6)  
 
+<a name="1" />
 
 ## 1. Basic Definitions:
 First, some basic definitions:
@@ -29,6 +30,7 @@ First, some basic definitions:
 
 **What is LEASH?**: LEASH stands for Line Entry Automated SHuffling, indicating that the Line Entries will be reformatted and rearranged automatically according to a set of LEASH Expressions.  
 
+<a name="2" />
 
 ## 2. LEASH Basics:
 ### 2.1. LEASH Keywords
@@ -63,6 +65,7 @@ Additionally, there is a 4th keyword `mods`, which must be used with LEASH Reser
 
 5. A LEASH Expression must have a body (i.e., a pair of curly braces), even though there could be nothing in-between the pair of curly braces, e.g., `{}`.  
 
+<a name="3" />
 
 ## 3. A Quick Example of LEASH
 
@@ -114,11 +117,13 @@ After PipelineDog has processed, the string `cat ~A > ~B` becomes:
 cat /a/t1.txt /a/t2.txt /temp/t3.txt > /temp/all.txt
 ```
 
+<a name="4" />
 
 ## 4. A Detailed Guide On How To Use LEASH
 
 Here are the detailed explanation of each LEASH Expression keyword, and how to use them:
 
+<a name="4-1" />
 
 ### 4.1. The *file* keyword:
 The `file` is used to select the file(s) for a step.  
@@ -136,6 +141,7 @@ input : [/b/t1.txt, /c/t2.txt, /c/t3.txt, /d/t4.txt]
 
 *The Default Value of `file`*: when omitted, `file` will take the value of "-", i.e., to select all files.
 
+<a name="4-2" />
 
 ### 4.2. The *line* keyword:
 
@@ -222,6 +228,7 @@ The `0` after `:` in this case instructs PipelineDog to place all selected Line 
 
 *The Default Value of `line`*: when omitted, "line" will take the value of "-", i.e., to select all Line Entries in the selected files, and to output one Line Entry per constructed command (i.e., with Grouping Tag of `1`, like this `"-:1"`).  
 
+<a name="4-3" />
 
 ### 4.3. The *mod* keyword:
 
@@ -255,11 +262,13 @@ Again, PipelineDog will automatically add the last file separator (i.e., the for
 
 *The Default Value of `mod`*: when omitted, `mod` will take the value of `P''B'-'F'-'S''`, i.e., keep the original Line Entry intact when it is placed into the constructed command.
 
+<a name="4-4" />
 
 ### 4.4. The *mods* keyword:
 
 `mods` (stands for mod-simplified) fulfills most of the functions of `mod` (but not all), but with a much easier-to-remember syntax. `mods` is used together with the LEASH Reserved Words, so the detailed usage of `mods` in the Section 5 [below](#5).
 
+<a name="5" />
 
 ## 5. LEASH Reserved Words For Better Usability:
 
@@ -282,6 +291,7 @@ These Reserved Words, when used together with the keyword `mods`, can make progr
 4. `$..PATH` : the path to the parental folder of `$PATH` (e.g., `/`)  
 5. `$FILENAME_WITHOUT_EXTENSION` : just the filename, excluding the last suffix (e.g., `t3`)  
 
+<a name="5-1" />
 
 ### 5.1. The `mods` keyword with Reserved Words  
 
@@ -322,8 +332,9 @@ mods : "$..PATH/all.txt"
 ```
 Then PipelineDog will only follow the instructions provided inside `mod`, and ignore `mods`.  
 
+<a name="5-2" />
 
-### 5.2. The `$` Reserved Word to Access Other Variables  
+###5.2. The `$` Reserved Word to Access Other Variables  
 
 The `$` is also a Reserved Word of LEASH, and it can be used to access other key-value pairs (YAML variables). We have already seen an example in the PipelineDog Step Definition document:  
 ```
@@ -368,6 +379,7 @@ out : {mod : "S'.txt'"},
 ```
 Notice, all the tags with a leading `$` have been replaced by the actual values.
 
+<a name="6" />
 
 ## 6. Summary
 
@@ -382,4 +394,3 @@ Yazhou Sun
 Jinchuan Xing  
 May 2016     
 August 2016
-
