@@ -23,7 +23,8 @@ First, some basic definitions:
 **[LEASH Target](#LEASH-target)**: a text anchor marked by a leading `~` (the tilde character), which will be replaced by PipelineDog according to the corresponding LEASH expression.  
 **[LEASH Expression](#LEASH-expression)**: the detailed instructions on how to replace a LEASH target with reformatted/reshuffled Line Entries.  
 
-<a name="1" />  
+<a name="1" /> 
+
 ## 1. A Quick Overview  
 
 A PipelineDog Step Definition file (as well as the entire Project Definition file) is just an YAML file with PipelineDog-specific tags. YAML is a human-readable language that describes a collection of key-value pairs (i.e., a key name and a value separated by `:`, for example: `planet: Earth`, the key name is `planet`, and the value for this key is `Earth`).  
