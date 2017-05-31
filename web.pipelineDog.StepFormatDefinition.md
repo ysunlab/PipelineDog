@@ -60,11 +60,13 @@ Note: the actual Bash script PipelineDog generated will contain more (usually mu
 
 ============================================================  
 <a name="2" />  
+
 ## 2. The Detailed Specification
 
 Let's examine all the key-value pairs inside this Step Definition one by one.
 
 <a name="2-1" />
+
 ### 2.1. The *Step-ID* Key  
 
   __In our example__: `2-1: {...}`  
@@ -80,6 +82,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
   6. The key value (i.e., things between the `{}`) must be non-empty. you wouldn't define a step inside a pipeline that does nothing, right?
 
 <a name="2-2" />
+
 ### 2.2. The *Name* Key   
 
   __In our example__: `name : Gunzip while keep original,`  
@@ -94,6 +97,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
   4. *Tips*: notice the comma at the end of the line (`,`). This is required by YAML to separate different key-value pairs inside an object.
 
 <a name="2-3" />
+
 ### 2.3. The *In* Key  
 
   __In our example__: `in : $1.txt,`  
@@ -120,6 +124,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
   6. The `$` is to instruct PipelineDog to take the content (or value) of the List File, similar to the UNIX command line usage of `$`.  
 
 <a name="2-4" />
+
 ### 2.4. The *Run* Key  
 
   __In our example__: `run : /usr/bin/gunzip -c ~A > ~B,`  
@@ -136,8 +141,11 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
   4. A LEASH Target must start with a leading `~` (the tilde character), followed by a alphanumerical name. There should be only numbers and letters (and the `~` character) for a LEASH Target, while any other characters are not allowed.  
   
 <a name="2-5" />
+
 ### 2.5. The *LEASH Expression* Key  
+
 <a name="LEASH-expression" />  
+
   __In our example__: `~B : {mod : "S'.txt'"},`  
   __Required__: Yes, if a corresponding LEASH Target has been used  
   __Must be non-empty__: No, it can be an empty pair of curly braces `{}`, like `~A : {},` and in this case, this LEASH target will take on all the default values of a LEASH Expression.  
@@ -155,6 +163,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
 
 
 <a name="2-6" />
+
 ### 2.6. The *Out* Key  
 
   __In our example__:`out : $~B,`  
@@ -170,6 +179,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
   5. When the `out` key is omitted, then an analysis step without any output files has been defined. Examples of this kind of output-less analysis steps are: commands to shutdown/terminate remote clouding computing instances (e.g., `terminate-instances` for EC2), or commands to perform local or remote backup. An output-less step might have an input key (e.g., specifying which files to backup).  
   
 <a name="2-7" />
+
 ### 2.7. The *Comment* Key  
 
   __In our example__: we didn't include a comment field in our example, but a comment example could be: `comment : Created by John Smith for XYZ project on 2016/01/31 using ...`   
@@ -182,6 +192,7 @@ Let's examine all the key-value pairs inside this Step Definition one by one.
   2. The key value can be anything (PipelineDog will not process the comment field).  
 
 <a name="3" />
+
 ## 3. Summary
 There are in total 7 different kinds of key-value pairs in a Step Definition, and they are explained in details in 2.1 to 2.7. There are 6 keys to describing a step (2.2 to 2.7), and one to ID the entire step (2.1). With a step defined, you can then define a pipeline with several steps. You can find out how to define a pipeline in the PipelineDog Project Definition file  [here](https://github.com/ysunlab/PipelineDog/blob/master/web.pipelineDog.ProjectFormatDefinition.md).
 
