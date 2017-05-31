@@ -16,7 +16,7 @@
   [5.2. The `$` Reserved Word to Access Other Variables](#5-2)  
 [6. Summary](#6)  
 
-<a name="1" />
+
 ## 1. Basic Definitions:
 First, some basic definitions:
 
@@ -29,7 +29,7 @@ First, some basic definitions:
 
 **What is LEASH?**: LEASH stands for Line Entry Automated SHuffling, indicating that the Line Entries will be reformatted and rearranged automatically according to a set of LEASH Expressions.  
 
-<a name="2" />
+
 ## 2. LEASH Basics:
 ### 2.1. LEASH Keywords
 
