@@ -56,7 +56,7 @@ You should modify the content as well as the file name of the List File(s) to su
     </kbd>
   </p>
   Let's change the <kbd>Default List</kbd>'s name into `1.txt`.  
-  When done, don't forget to clikc the <kbd>OK</kbd> button.  
+  When done, don't forget to click the <kbd>OK</kbd> button.  
   2. You can change the content of the <kbd>1.txt</kbd> List File by using the <kbd>EDITOR</kbd> window on the right. For example, assume that you have the following gzipped files with the following path:  
   ```
   /home/jsmith/Desktop/t1.gzip
@@ -177,9 +177,9 @@ At the moment, you have entered all the code for this pipeline, and specified th
     </kbd>
   </p>
   
-  With the above window shown, you can either download the entire PipelineDog script by clicking the <kbd>DOWNLOAD</kbd> button in this poped-up window, or copy-paste the content inside this window directly.  
+  With the above window shown, you can either download the entire PipelineDog script by clicking the <kbd>DOWNLOAD</kbd> button in this popped-up window, or copy-paste the content inside this window directly.  
   
-  3. To export the bash script (so you can run this script locally to actually run this pipeline and get the results), click the the <kbd>Export Pipeline</kbd> button, and you will get this:  
+  3. To export the bash script (so you can run this script locally to actually run this pipeline and get the results), click the <kbd>Export Pipeline</kbd> button, and you will get this:  
   <p align="center">
     <kbd>
       <img src="https://github.com/ysunlab/PipelineDog/blob/master/img.d/simpleStart.d/12exportPipeline.jpg?raw=true" alt="Just Started Page" />
